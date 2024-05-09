@@ -3,16 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/06 17:22:26 by truello           #+#    #+#             */
-/*   Updated: 2024/05/06 17:33:25 by truello          ###   ########.fr       */
+/*   Created: 2024/05/09 19:02:38 by tohma             #+#    #+#             */
+/*   Updated: 2024/05/09 20:34:02 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
+#include <iostream>
+#include <string.h>
 
+class Animal
+{
+	protected:
+		std::string type;
+		void setType(std::string type);
+		
+	public:
+		Animal();
+		Animal(const Animal &ref);
+		~Animal();
+		Animal &operator=(const Animal &ref);
+		
+		std::string getType(void) const;
+		virtual void makeSound(void) const;
+};
 
 #endif

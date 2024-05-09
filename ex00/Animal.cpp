@@ -1,39 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:36:22 by tohma            ###   ########.fr       */
+/*   Updated: 2024/05/09 20:33:51 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "Animal.hpp"
 
-Cat::Cat(void)
+Animal::Animal(void)
 {
-	this->setType("Cat");
-	std::cout << "Cat constructor called" << std::endl;
+	std::cout << "Animal constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat &ref)
+Animal::Animal(const Animal &ref)
 {
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << "Animal copy constructor called" << std::endl;
+	this->type = ref.getType();
 }
 
-Cat::~Cat(void)
+Animal::~Animal(void)
 {
-	std::cout << "Cat destructor called" << std::endl;
+	std::cout << "Animal destructor called" << std::endl;
 }
 
-Cat &Cat::operator=(const Cat &ref)
+Animal &Animal::operator=(const Animal &ref)
 {
+	this->type = ref.getType();
 	return (*this);
 }
 
-void Cat::makeSound(void) const
+std::string Animal::getType(void) const
 {
-	std::cout << "Miaou!" << std::endl;
+	return (this->type);
+}
+
+void Animal::setType(std::string type)
+{
+	this->type = type;
+}
+
+void Animal::makeSound(void) const
+{
+	std::cout << "Animal sound" << std::endl;
 }
