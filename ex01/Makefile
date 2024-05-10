@@ -1,6 +1,6 @@
 SRC=$(shell find . -name \*.cpp -type f -print)
 OBJ=$(patsubst %.cpp, %.o,$(SRC))
-NAME=and_open
+NAME=bruler_le_monde
 FLAGS=-Wall -Werror -Wextra -std=c++98
 
 all:

@@ -6,7 +6,7 @@
 /*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:35:06 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:36:41 by truello          ###   ########.fr       */
+/*   Updated: 2024/05/10 17:33:37 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 class Cat : public Animal
 {
+	private:
+		Brain *brain;
 	public:
 		Cat();
 		Cat(const Cat &ref);

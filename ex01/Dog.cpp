@@ -1,40 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:36:32 by truello          ###   ########.fr       */
+/*   Updated: 2024/05/09 20:34:50 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "Dog.hpp"
 
-Cat::Cat(void)
+Dog::Dog(void)
 {
-	this->setType("Cat");
-	std::cout << "Cat constructor called" << std::endl;
+	this->setType("Dog");
+	std::cout << "Dog constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat &ref)
+Dog::Dog(const Dog &ref)
 {
-	std::cout << "Cat copy constructor called" << std::endl;
+	std::cout << "Dog copy constructor called" << std::endl;
 }
 
-Cat::~Cat(void)
+Dog::~Dog(void)
 {
-	std::cout << "Cat destructor called" << std::endl;
-	delete this->brain;
+	std::cout << "Dog destructor called" << std::endl;
 }
 
-Cat &Cat::operator=(const Cat &ref)
+Dog &Dog::operator=(const Dog &ref)
 {
 	return (*this);
 }
 
-void Cat::makeSound(void) const
+void Dog::makeSound(void) const
 {
-	std::cout << "Miaou!" << std::endl;
+	std::cout << "Woof!" << std::endl;
 }

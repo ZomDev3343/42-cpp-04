@@ -6,7 +6,7 @@
 /*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:36:32 by truello          ###   ########.fr       */
+/*   Updated: 2024/05/10 17:42:37 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Cat::Cat(void)
 {
 	this->setType("Cat");
+	this->brain = new Brain;
 	std::cout << "Cat constructor called" << std::endl;
 }
 
