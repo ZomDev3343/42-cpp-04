@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:25:06 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:29:38 by tohma            ###   ########.fr       */
+/*   Updated: 2024/05/10 18:08:59 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 class Dog : public Animal
 {
+	private:
+		Brain *brain;
 	public:
 		Dog();
 		Dog(const Dog &ref);

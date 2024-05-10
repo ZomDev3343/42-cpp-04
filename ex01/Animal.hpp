@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:02:38 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:33:20 by truello          ###   ########.fr       */
+/*   Updated: 2024/05/10 18:04:42 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Animal
 	public:
 		Animal();
 		Animal(const Animal &ref);
-		~Animal();
+		virtual ~Animal();
 		Animal &operator=(const Animal &ref);
 
 		std::string getType(void) const;

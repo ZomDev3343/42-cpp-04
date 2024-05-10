@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:42:37 by truello          ###   ########.fr       */
+/*   Updated: 2024/05/10 18:12:16 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ Cat::Cat(void)
 Cat::Cat(const Cat &ref)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
+	(*this) = ref;
 }
 
 Cat::~Cat(void)
@@ -32,6 +33,7 @@ Cat::~Cat(void)
 
 Cat &Cat::operator=(const Cat &ref)
 {
+	*(this->brain) = *(ref.brain);
 	return (*this);
 }
 
