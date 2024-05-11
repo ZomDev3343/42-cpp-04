@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 18:31:46 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 18:32:28 by tohma            ###   ########.fr       */
+/*   Updated: 2024/05/11 13:57:05 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 
 class ICharacter
 {
-	
+	private:
+		std::string name;
+	public:
+		std::string &getName(void) const;
 };
 
 #endif
