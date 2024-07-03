@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:02:38 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:34:02 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/03 11:51:03 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal
 	public:
 		Animal();
 		Animal(const Animal &ref);
-		~Animal();
+		virtual ~Animal();
 		Animal &operator=(const Animal &ref);
 		
 		std::string getType(void) const;

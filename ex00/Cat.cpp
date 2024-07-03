@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 17:36:32 by truello          ###   ########.fr       */
+/*   Updated: 2024/07/03 11:39:57 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ Cat::Cat(const Cat &ref)
 Cat::~Cat(void)
 {
 	std::cout << "Cat destructor called" << std::endl;
-	delete this->brain;
 }
 
 Cat &Cat::operator=(const Cat &ref)

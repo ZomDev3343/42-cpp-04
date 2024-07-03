@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:48:49 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:49:44 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/03 11:50:41 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class WrongCat : public WrongAnimal
 	public:
 		WrongCat();
 		WrongCat(const WrongCat &ref);
-		~WrongCat();
+		virtual ~WrongCat();
 		WrongCat &operator=(const WrongCat &ref);
 
 		void makeSound(void) const;

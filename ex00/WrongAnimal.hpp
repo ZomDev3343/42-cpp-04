@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:41:08 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:44:03 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/03 11:50:07 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class WrongAnimal
 	public:
 		WrongAnimal();
 		WrongAnimal(const WrongAnimal &ref);
-		~WrongAnimal();
+		virtual ~WrongAnimal();
 		WrongAnimal &operator=(const WrongAnimal &ref);
 		
 		std::string getType(void) const;
