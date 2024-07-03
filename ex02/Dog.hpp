@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:25:06 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 18:16:59 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/03 11:54:29 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Dog : public Animal
 	public:
 		Dog();
 		Dog(const Dog &ref);
-		~Dog();
+		virtual ~Dog();
 		Dog &operator=(const Dog &ref);
 
 		void makeSound(void) const override;

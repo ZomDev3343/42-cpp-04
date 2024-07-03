@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:35:06 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/10 18:16:54 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/03 11:54:27 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Cat : public Animal
 	public:
 		Cat();
 		Cat(const Cat &ref);
-		~Cat();
+		virtual ~Cat();
 		Cat &operator=(const Cat &ref);
 
 		void makeSound(void) const override;
