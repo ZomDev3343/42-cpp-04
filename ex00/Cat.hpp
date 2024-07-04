@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:35:06 by tohma             #+#    #+#             */
-/*   Updated: 2024/07/03 11:51:08 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/04 16:46:17 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
-#define CAT_CPP
+#define CAT_HPP
 
 #include "Animal.hpp"
 
