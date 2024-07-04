@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 20:16:27 by tohma             #+#    #+#             */
-/*   Updated: 2024/05/09 20:34:50 by tohma            ###   ########.fr       */
+/*   Updated: 2024/07/04 15:20:32 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Dog::Dog(void)
 	std::cout << "Dog constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &ref)
+Dog::Dog(const Dog &ref) : Animal(ref)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
 }
@@ -30,6 +30,7 @@ Dog::~Dog(void)
 
 Dog &Dog::operator=(const Dog &ref)
 {
+	Animal::operator=(ref);
 	return (*this);
 }
 
